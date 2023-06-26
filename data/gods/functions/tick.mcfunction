@@ -28,5 +28,5 @@ kill @e[type=item,nbt={Item:{tag:{CustomTag:{godpower:1}}}}]
 # 8. Poison (Cannot get poisoned, give others poison when near them, strength)
 # 9. Time (Changes the time of day, sleep depravation)
 # 10. Weather (Controls weather, has lightning attacks) ✔
-# 11. Motion (Spectator mode with particles following their position)
+# 11. Motion (Spectator mode with particles following their position) /
 # 12. End (Teleport where you are looking, teleport nearby players where you are looking, teleport attack)
