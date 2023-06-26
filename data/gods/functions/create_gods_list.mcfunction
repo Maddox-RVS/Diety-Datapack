@@ -16,8 +16,5 @@ team add Fire
 team modify Fire prefix ["","[",{"text":"Fire","color":"gold"},"] "]
 scoreboard objectives add fireBeam dummy
 
-team add Motion
-team modify Motion prefix ["","[",{"text":"Motion","color":"aqua"},"] "]
-scoreboard objectives add motionSwitcherClickStatus minecraft.used:minecraft.warped_fungus_on_a_stick
 
-tellraw @a {"text":"\nCreated gods:\n------------\n1. Weather\n2. Famine\n3. Animals\n4. Fire\n5. Motion\n","color":"gold"}
+tellraw @a {"text":"\nCreated gods:\n------------\n1. Weather\n2. Famine\n3. Animals\n4. Fire\n","color":"gold"}
