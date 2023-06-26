@@ -16,6 +16,9 @@ team add Fire
 team modify Fire prefix ["","[",{"text":"Fire","color":"gold"},"] "]
 scoreboard objectives add fireBeam dummy
 
+team add Motion
+team modify Motion prefix ["","[",{"text":"Motion","color":"aqua"},"] "]
+scoreboard objectives add motionSwitcherClickStatus minecraft.used:minecraft.warped_fungus_on_a_stick
 
 team add Gravity
 team modify Gravity prefix ["","[",{"text":"Gravity","color":"gray"},"] "]
