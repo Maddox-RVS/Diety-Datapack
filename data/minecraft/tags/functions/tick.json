@@ -4,6 +4,7 @@
 		"famine:tick",
 		"animals:tick",
 		"fire:tick",
-		"motion:tick"
+		"motion:tick",
+		"gravity:tick"
 	]
 }

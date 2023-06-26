@@ -20,14 +20,18 @@ clear @a[team=!Fire] written_book{title:"Staff of Flames",author:"Player"}
 execute as @a[team=Motion] unless entity @s[nbt={Inventory:[{id:"minecraft:warped_fungus_on_a_stick",tag:{display:{Name:'{"text":"Switch Motion","italic":false}'}}}]}] run give @s warped_fungus_on_a_stick{CustomTag:{godpower:1},display:{Name:'{"text":"Switch Motion","italic":false}'}} 1
 clear @a[team=!Motion] warped_fungus_on_a_stick{display:{Name:'{"text":"Switch Motion","italic":false}'}}
 
+#Gravity
+execute as @a[team=Gravity] run execute unless entity @s[nbt={Inventory:[{id:"minecraft:written_book",tag:{title:"Gravity Gauntlet",author:"Player"}}]}] run give @s written_book{CustomTag:{godpower:1},pages:["[\"\",\"\\n\",\"\\n\",\"\\n\",\"-------------------\",\"\\n\",\"      [\",{\"text\":\"Move Self Up\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/function gravity:up_self\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Send yourself up into the sky!\"]}},\"]\",\"\\n\",\"        [\",{\"text\":\"Slow Self\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/function gravity:slow_self\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Slow down your fall!\"]}},\"]\",\"\\n\",\"    [\",{\"text\":\"Move Others Up\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/function gravity:up_others\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Send others around you flying into the sky!\"]}},\"]\",\"\\n\",\"   [\",{\"text\":\"Slow Others Down\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/function gravity:slow_others\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Slow other players around down when the fall!\"]}},\"]\",\"\\n\",\"-------------------\"]"],title:"Gravity Gauntlet",author:Player}
+clear @a[team=!Gravity] written_book{title:"Gravity Gauntlet",author:"Player"}
+
 kill @e[type=item,nbt={Item:{tag:{CustomTag:{godpower:1}}}}]
 
 # 1. Famine (Controls crops) ✔
 # 2. Animals (Controlls all animals, gets a little resistance) ✔
 # 3. Sea (Control all water animals, has water breathing, speed underwater)
-# 4. Gravity (Levitation, Slowfalling)
+# 4. Gravity (Levitation, Slowfalling)✔
 # 5. Sculk (Shoot nerfed warden blast, Give nearby players glowing/darkness, [secret ability ill show tobie when we get to it])
-# 6. Fire (Fireball✔, Draw Fire, Fire Resistance✔)
+# 6. Fire (Fireball✔, Draw Fire, Fire Resistance✔)✔
 # 7. Mobs (Controls hostile mobs)
 # 8. Poison (Cannot get poisoned, give others poison when near them, strength)
 # 9. Time (Changes the time of day, sleep depravation)

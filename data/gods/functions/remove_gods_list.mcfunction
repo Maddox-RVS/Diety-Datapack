@@ -6,5 +6,6 @@ scoreboard objectives remove cropTimer
 team remove Animals
 team remove Fire
 team remove Motion
+team remove Gravity
 
-tellraw @a {"text":"\nRemoved gods:\n------------\n1. Weather\n2. Famine\n3. Animals\n4. Fire\n5. Motion\n","color":"gold"}
+tellraw @a {"text":"\nRemoved gods:\n------------\n1. Weather\n2. Famine\n3. Animals\n4. Fire\n5. Motion\n6. Gravity\n","color":"gold"}

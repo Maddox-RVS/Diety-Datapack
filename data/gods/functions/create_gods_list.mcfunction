@@ -20,4 +20,7 @@ team add Motion
 team modify Motion prefix ["","[",{"text":"Motion","color":"aqua"},"] "]
 scoreboard objectives add motionSwitcherClickStatus minecraft.used:minecraft.warped_fungus_on_a_stick
 
-tellraw @a {"text":"\nCreated gods:\n------------\n1. Weather\n2. Famine\n3. Animals\n4. Fire\n5. Motion\n","color":"gold"}
+team add Gravity
+team modify Gravity prefix ["","[",{"text":"Gravity","color":"gray"},"] "]
+
+tellraw @a {"text":"\nCreated gods:\n------------\n1. Weather\n2. Famine\n3. Animals\n4. Fire\n5. Motion\n6. Gravity\n","color":"gold"}
