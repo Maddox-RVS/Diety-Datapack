@@ -35,6 +35,7 @@ kill @e[type=item,nbt={Item:{tag:{CustomTag:{godpower:1}}}}]
 # 7. Mobs (Controls hostile mobs)
 # 8. Poison (Cannot get poisoned, give others poison when near them, strength)
 # 9. Time (Changes the time of day, sleep depravation)
-# 10. Weather (Controls weather, has lightning attacks) 
-# 11. Motion (Spectator mode with particles following their position) ✔
+# 10. Weather (Controls weather, has lightning attacks) ✔
+# 11. Motion (Spectator mode with particles following their position)
 # 12. End (Teleport where you are looking, teleport nearby players where you are looking, teleport attack)
+# 13. Enchants (Bless an item for good enchants in an enchantment table)
