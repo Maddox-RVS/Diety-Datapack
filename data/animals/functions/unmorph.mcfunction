@@ -19,6 +19,9 @@ tag @e[type=!player, distance=..1] remove panda
 tag @e[type=!player, distance=..1] remove polar_bear
 tag @e[type=!player, distance=..1] remove rabbit
 tag @e[type=!player, distance=..1] remove trader_llama
+tag @e[type=!player, distance=..1] remove sniffer
+tag @e[type=!player, distance=..1] remove fox
+tag @e[type=!player, distance=..1] remove frog
 tag @s remove morpher
 team remove morphs
 effect clear @s invisibility

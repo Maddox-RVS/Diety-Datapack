@@ -19,6 +19,8 @@ execute if entity @e[type=polar_bear, distance=..3] run function animals:tag_pol
 execute if entity @e[type=rabbit, distance=..3] run function animals:tag_rabbit
 execute if entity @e[type=trader_llama, distance=..3] run function animals:tag_trader_llama
 execute if entity @e[type=sniffer, distance=..3] run function animals:tag_sniffer
+execute if entity @e[type=frog, distance=..3] run function animals:tag_frog
+execute if entity @e[type=fox, distance=..3] run function animals:tag_fox
 
 # type=sheep
 # type=cow
@@ -40,6 +42,9 @@ execute if entity @e[type=sniffer, distance=..3] run function animals:tag_sniffe
 # type=polar_bear
 # type=rabbit
 # type=trader_llama
+# type=sniffer
+# type=fox
+# type=frog
 
 team add morphs
 team join morphs @e[tag=morphable]
