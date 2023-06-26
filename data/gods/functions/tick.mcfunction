@@ -12,6 +12,10 @@ clear @a[team=!Famine] written_book{title:"Staff of Famine", author:"Player"}
 execute as @a[team=Animals] run execute unless entity @s[nbt={Inventory:[{id:"minecraft:written_book",tag:{title:"Orb of Morphs",author:"Player"}}]}] run give @s written_book{CustomTag:{godpower:1},pages:["[\"\",\"\\n\",\"\\n\",\"\\n\",\"-------------------\",\"\\n\",\"          [\",{\"text\":\"Morph\",\"color\":\"gold\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/function animals:morph\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[{\"text\":\"Makes all animals within a 3x3 radius become part of a list of queued morphs!\",\"color\":\"gold\"}]}},\"]\",\"\\n\",\"\\n\",\"\\n\",\"\\n\",\"        [\",{\"text\":\"Un-Morph\",\"color\":\"gold\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/function animals:unmorph\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[{\"text\":\"Removes all queued morphs!\",\"color\":\"red\"}]}},\"]\",\"\\n\",\"-------------------\",\"\\n\"]"],title:"Orb of Morphs",author:Player}
 clear @a[team=!Animals] written_book{title:"Orb of Morphs", author:"Player"}
 
+#Fire
+execute as @a[team=Fire] run execute unless entity @s[nbt={Inventory:[{id:"minecraft:written_book",tag:{title:"Staff of Flames",author:"Player"}}]}] run give @s written_book{CustomTag:{godpower:1},pages:["[\"\",\"\\n\",\"\\n\",\"\\n\",\"-------------------\",\"\\n\",\"          [\",{\"text\":\"Fireball\",\"color\":\"gold\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/function fire:fireball\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[{\"text\":\"Shoots a fireball in the direction you're looking!\",\"color\":\"gold\"}]}},\"]\",\"\\n\",\"\\n\",\"\\n\",\"\\n\",\"        [\",{\"text\":\"Toggle Fire Beam\",\"color\":\"gold\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/function fire:toggleDraw\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[{\"text\":\"Sets any block or entity you're looking at on fire!\",\"color\":\"red\"}]}},\"]\",\"\\n\",\"-------------------\",\"\\n\"]"],title:"Staff of Flames",author:Player}
+clear @a[team=!Fire] written_book{title:"Staff of Flames",author:"Player"}
+
 kill @e[type=item,nbt={Item:{tag:{CustomTag:{godpower:1}}}}]
 
 # 1. Famine (Controls crops) ✔
@@ -19,7 +23,7 @@ kill @e[type=item,nbt={Item:{tag:{CustomTag:{godpower:1}}}}]
 # 3. Sea (Control all water animals, has water breathing, speed underwater)
 # 4. Gravity (Levitation, Slowfalling)
 # 5. Sculk (Shoot nerfed warden blast, Give nearby players glowing/darkness, [secret ability ill show tobie when we get to it])
-# 6. Fire (Fireball, Draw Fire, Fire Resistance)
+# 6. Fire (Fireball✔, Draw Fire, Fire Resistance✔)
 # 7. Mobs (Controls hostile mobs)
 # 8. Poison (Cannot get poisoned, give others poison when near them, strength)
 # 9. Time (Changes the time of day, sleep depravation)

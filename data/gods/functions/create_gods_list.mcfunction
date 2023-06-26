@@ -14,6 +14,7 @@ team modify Animals seeFriendlyInvisibles false
 
 team add Fire
 team modify Fire prefix ["","[",{"text":"Fire","color":"gold"},"] "]
+scoreboard objectives add fireBeam dummy
 
 
 tellraw @a {"text":"\nCreated gods:\n------------\n1. Weather\n2. Famine\n3. Animals\n4. Fire\n","color":"gold"}
