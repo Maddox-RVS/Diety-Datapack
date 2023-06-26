@@ -1,0 +1,2 @@
+execute as @a[team=Motion] run execute if score @s motionSwitcherClickStatus matches 1 run function motion:spectate_mode
+execute at @a[team=Motion, tag=motionMode] run execute if block ~ ~-2 ~ air run execute as @p run function motion:normal_mode 

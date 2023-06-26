@@ -3,6 +3,7 @@
 		"gods:tick",
 		"famine:tick",
 		"animals:tick",
-		"fire:tick"
+		"fire:tick",
+		"motion:tick"
 	]
 }
