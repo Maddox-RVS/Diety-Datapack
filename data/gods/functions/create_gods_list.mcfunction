@@ -14,6 +14,7 @@ team modify Animals seeFriendlyInvisibles false
 
 team add Fire
 team modify Fire prefix ["","[",{"text":"Fire","color":"gold"},"] "]
+scoreboard objectives add fireBeam dummy
 
 team add Motion
 team modify Motion prefix ["","[",{"text":"Motion","color":"aqua"},"] "]

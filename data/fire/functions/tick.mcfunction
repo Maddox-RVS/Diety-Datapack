@@ -1,1 +1,4 @@
-execute run effect give @a[team = fire] fire_resistance 2 1 true
+execute run effect give @e[team = Fire] fire_resistance 1 1 true
+
+execute at @a[team = Fire] if score @s fireBeam matches 1 as @s run function fire:draw
+execute at @a[team = Fire] if score @s fireBeam matches 0 as @s run scoreboard players set @s firebeam 1
