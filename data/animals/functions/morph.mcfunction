@@ -18,6 +18,7 @@ execute if entity @e[type=panda, distance=..3] run function animals:tag_panda
 execute if entity @e[type=polar_bear, distance=..3] run function animals:tag_polar_bear
 execute if entity @e[type=rabbit, distance=..3] run function animals:tag_rabbit
 execute if entity @e[type=trader_llama, distance=..3] run function animals:tag_trader_llama
+execute if entity @e[type=sniffer, distance=..3] run function animals:tag_sniffer
 
 # type=sheep
 # type=cow

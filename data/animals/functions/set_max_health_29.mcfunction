@@ -1,3 +1,3 @@
-execute as @a[team=Animals] run execute if entity @e[distance=..1, type=sheep, tag=morphable] run execute if score @s Health matches 32 run damage @s 3
-execute as @a[team=Animals] run execute if entity @e[distance=..1, type=sheep, tag=morphable] run execute if score @s Health matches 31 run damage @s 2
-execute as @a[team=Animals] run execute if entity @e[distance=..1, type=sheep, tag=morphable] run execute if score @s Health matches 30 run damage @s 1
+execute as @a[team=Animals] run execute if entity @e[distance=..1, tag=morphable] run execute if score @s Health matches 32 run damage @s 3
+execute as @a[team=Animals] run execute if entity @e[distance=..1, tag=morphable] run execute if score @s Health matches 31 run damage @s 2
+execute as @a[team=Animals] run execute if entity @e[distance=..1, tag=morphable] run execute if score @s Health matches 30 run damage @s 1

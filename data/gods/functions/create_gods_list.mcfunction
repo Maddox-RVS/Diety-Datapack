@@ -12,4 +12,8 @@ team add Animals
 team modify Animals prefix ["","[",{"text":"Animals","color":"yellow"},"] "]
 team modify Animals seeFriendlyInvisibles false
 
-tellraw @a {"text":"\nCreated gods:\n------------\n1. Weather\n2. Famine\n3. Animals\n","color":"gold"}
+team add Fire
+team modify Fire prefix ["","[",{"text":"Fire","color":"gold"},"] "]
+
+
+tellraw @a {"text":"\nCreated gods:\n------------\n1. Weather\n2. Famine\n3. Animals\n4. Fire\n","color":"gold"}

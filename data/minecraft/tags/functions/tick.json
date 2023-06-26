@@ -2,6 +2,7 @@
 	"values": [
 		"gods:tick",
 		"famine:tick",
-		"animals:tick"
+		"animals:tick",
+		"fire:tick"
 	]
 }

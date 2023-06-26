@@ -26,4 +26,3 @@ function famine:age_trees
 function famine:kill_trees
 function famine:kill_suagr_kelp
 function famine:give_hunger
-function famine:give_saturation
