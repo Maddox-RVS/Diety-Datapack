@@ -3,12 +3,8 @@
 		"gods:tick",
 		"famine:tick",
 		"animals:tick",
-<<<<<<< HEAD
 		"fire:tick",
 		"motion:tick",
 		"gravity:tick"
-=======
-		"fire:tick"
->>>>>>> aa0dd45d1d1ccef7046df715f94965d46b3c3a93
 	]
 }
