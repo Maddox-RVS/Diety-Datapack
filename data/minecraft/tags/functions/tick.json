@@ -5,6 +5,8 @@
 		"animals:tick",
 		"fire:tick",
 		"motion:tick",
-		"gravity:tick"
+		"poison:tick",
+		"gravity:tick",
+		"sculk:tick"
 	]
 }

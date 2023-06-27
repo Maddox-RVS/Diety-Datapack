@@ -24,6 +24,10 @@ clear @a[team=!Motion] warped_fungus_on_a_stick{display:{Name:'{"text":"Switch M
 execute as @a[team=Gravity] run execute unless entity @s[nbt={Inventory:[{id:"minecraft:written_book",tag:{title:"Gravity Gauntlet",author:"Player"}}]}] run give @s written_book{CustomTag:{godpower:1},pages:["[\"\",\"\\n\",\"\\n\",\"\\n\",\"-------------------\",\"\\n\",\"      [\",{\"text\":\"Move Self Up\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/function gravity:up_self\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Send yourself up into the sky!\"]}},\"]\",\"\\n\",\"        [\",{\"text\":\"Slow Self\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/function gravity:slow_self\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Slow down your fall!\"]}},\"]\",\"\\n\",\"    [\",{\"text\":\"Move Others Up\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/function gravity:up_others\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Send others around you flying into the sky!\"]}},\"]\",\"\\n\",\"   [\",{\"text\":\"Slow Others Down\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/function gravity:slow_others\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"Slow other players around down when the fall!\"]}},\"]\",\"\\n\",\"-------------------\"]"],title:"Gravity Gauntlet",author:Player}
 clear @a[team=!Gravity] written_book{title:"Gravity Gauntlet",author:"Player"}
 
+#Poison
+execute as @a[team=Poison] run execute unless entity @s[nbt={Inventory:[{id:"minecraft:written_book",tag:{title:"Poison Pouch",author:"Player"}}]}] run give @s written_book{CustomTag:{godpower:1},pages:["[\"\",\"\\n\",\"\\n\",\"\\n\",\"-------------------\",\"\\n\",\"     [\",{\"text\":\"Toxic Sneeze\",\"color\":\"green\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/function poison:poison_others\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[{\"text\":\"Poisons All Entities Within 5 blocks of You\",\"color\":\"gold\"}]}},\"]\",\"\\n\",\"\\n\",\"\\n\",\"\\n\",\"      [\",{\"text\":\"Poison Dart\",\"color\":\"gold\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/function poison:start_dart\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[{\"text\":\"Super Long Ranged Poison Dart\",\"color\":\"gold\"}]}},\"]\",\"\\n\",\"-------------------\",\"\\n\"]"],title:"Poison Pouch",author:Player}
+clear @a[team=!Poison] written_book{title:"Poison Pouch",author:"Player"}
+
 kill @e[type=item,nbt={Item:{tag:{CustomTag:{godpower:1}}}}]
 
 # 1. Famine (Controls crops) ✔
@@ -33,9 +37,8 @@ kill @e[type=item,nbt={Item:{tag:{CustomTag:{godpower:1}}}}]
 # 5. Sculk (Shoot nerfed warden blast, Give nearby players glowing/darkness, [secret ability ill show tobie when we get to it])
 # 6. Fire (Fireball✔, Draw Fire, Fire Resistance✔)✔
 # 7. Mobs (Controls hostile mobs)
-# 8. Poison (Cannot get poisoned, give others poison when near them, strength)
+# 8. Poison (Cannot get poisoned, give others poison when near them, strength)✔
 # 9. Time (Changes the time of day, sleep depravation)
 # 10. Weather (Controls weather, has lightning attacks) ✔
-# 11. Motion (Spectator mode with particles following their position)
+# 11. Motion (Spectator mode with particles following their position)✔
 # 12. End (Teleport where you are looking, teleport nearby players where you are looking, teleport attack)
-# 13. Enchants (Bless an item for good enchants in an enchantment table)

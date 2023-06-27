@@ -51,4 +51,3 @@ team join morphs @e[tag=morphable]
 team modify morphs collisionRule pushOtherTeams
 team modify morphs nametagVisibility never
 tag @s add morpher
-

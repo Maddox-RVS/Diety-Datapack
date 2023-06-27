@@ -1,0 +1,1 @@
+execute if score @s rise >= riseTimeThreshHold rise run execute if score @s rise <= riseWaitTime rise run tp ~ ~0.145 ~

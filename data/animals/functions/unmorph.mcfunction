@@ -24,5 +24,7 @@ tag @e[type=!player, distance=..1] remove fox
 tag @e[type=!player, distance=..1] remove frog
 tag @s remove morpher
 team remove morphs
-effect clear @s invisibility
+execute if score @s isOnAnimalsTeam matches 1 run effect clear @s invisibility
+scoreboard players set @s isOnAnimalsTeam 2
 attribute @s generic.max_health base set 20
+function animals:set_max_health_20

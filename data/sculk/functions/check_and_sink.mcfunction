@@ -1,0 +1,2 @@
+execute if score @s sink >= sinkTimeThreshHold sink run execute if score @s sink matches 40 run tp ~ ~-0.0001 ~
+execute if score @s sink >= sinkTimeThreshHold sink run execute if score @s sink matches 20 run tp ~ ~-0.0001 ~

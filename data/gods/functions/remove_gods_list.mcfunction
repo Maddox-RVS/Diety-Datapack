@@ -5,7 +5,12 @@ team remove Famine
 scoreboard objectives remove cropTimer
 team remove Animals
 team remove Fire
+scoreboard objectives remove fireBeam
 team remove Motion
+scoreboard objectives remove motionSwitcherClickStatus
 team remove Gravity
+scoreboard objectives remove sink
+scoreboard objectives remove rise
+team remove Sculk
 
-tellraw @a {"text":"\nRemoved gods:\n------------\n1. Weather\n2. Famine\n3. Animals\n4. Fire\n5. Motion\n6. Gravity\n","color":"gold"}
+tellraw @a {"text":"\nRemoved gods:\n------------\n1. Weather\n2. Famine\n3. Animals\n4. Fire\n5. Motion\n6. Gravity\n7. Sculk\n8. Poison\n","color":"gold"}
