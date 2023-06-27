@@ -8,5 +8,6 @@ team empty Motion
 team empty Poison
 team empty Gravity
 team empty Sculk
+team empty Time
 
 tellraw @a {"text":"\nCleared all god status'\n","color":"gold"}

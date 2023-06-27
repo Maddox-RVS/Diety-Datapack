@@ -2,31 +2,42 @@
 
 team add Weather 
 team modify Weather prefix ["","[",{"text":"Weather","color":"blue"},"] "]
+team modify Weather seeFriendlyInvisibles false
 
 team add Famine
 team modify Famine prefix ["","[",{"text":"Famine","color":"red"},"] "]
 scoreboard objectives add cropTimer dummy
 scoreboard players set reset cropTimer 5
+team modify Famine seeFriendlyInvisibles false
 
 team add Animals
 team modify Animals prefix ["","[",{"text":"Animals","color":"yellow"},"] "]
 team modify Animals seeFriendlyInvisibles false
 scoreboard objectives add isOnAnimalsTeam dummy
+team modify Animals seeFriendlyInvisibles false
 
 team add Fire
 team modify Fire prefix ["","[",{"text":"Fire","color":"gold"},"] "]
+team modify Fire seeFriendlyInvisibles false
 
 team add Poison
 team modify Poison prefix ["","[",{"text":"Poison","color":"green"},"] "]
 scoreboard objectives add fireBeam dummy
+team modify Poison seeFriendlyInvisibles false
 
 team add Motion
 team modify Motion prefix ["","[",{"text":"Motion","color":"aqua"},"] "]
 scoreboard objectives add motionSwitcherClickStatus minecraft.used:minecraft.warped_fungus_on_a_stick
 scoreboard players set max motionSwitcherClickStatus 1
+team modify Motion seeFriendlyInvisibles false
 
 team add Gravity
 team modify Gravity prefix ["","[",{"text":"Gravity","color":"gray"},"] "]
+team modify Gravity seeFriendlyInvisibles false
+
+team add Time
+team modify Time prefix ["","[",{"text":"Time","color":"cyan"},"] "]
+team modify Gravity seeFriendlyInvisibles false
 
 team add Sculk
 team modify Sculk prefix ["","[",{"text":"Sculk","color":"dark_gray"},"] "]
@@ -35,8 +46,6 @@ scoreboard players set sinkTimeThreshHold sink 0
 scoreboard objectives add rise dummy
 scoreboard players set riseTimeThreshHold rise 0
 scoreboard players set riseWaitTime rise 19
+team modify Sculk seeFriendlyInvisibles false
 
-#80 = sound time
-#20 = sink time
-
-tellraw @a {"text":"\nCreated gods:\n------------\n1. Weather\n2. Famine\n3. Animals\n4. Fire\n5. Motion\n6. Gravity\n7. Sculk\n8. Poison\n","color":"gold"}
+tellraw @a {"text":"\nCreated gods:\n------------\n1. Weather\n2. Famine\n3. Animals\n4. Fire\n5. Motion\n6. Gravity\n7. Sculk\n8. Poison\n9. Time\n","color":"gold"}
