@@ -1,0 +1,1 @@
+execute as @a[distance=..10] run function sculk:sink

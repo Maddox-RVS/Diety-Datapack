@@ -42,10 +42,14 @@ team modify Gravity seeFriendlyInvisibles false
 team add Sculk
 team modify Sculk prefix ["","[",{"text":"Sculk","color":"dark_gray"},"] "]
 scoreboard objectives add sink dummy
+scoreboard players set @a sink -21
 scoreboard players set sinkTimeThreshHold sink 0
 scoreboard objectives add rise dummy
 scoreboard players set riseTimeThreshHold rise 0
 scoreboard players set riseWaitTime rise 19
 team modify Sculk seeFriendlyInvisibles false
+scoreboard objectives add sculk_dim dummy
+team add wardenVisuals
+team modify wardenVisuals collisionRule never
 
 tellraw @a {"text":"\nCreated gods:\n------------\n1. Weather\n2. Famine\n3. Animals\n4. Fire\n5. Motion\n6. Gravity\n7. Sculk\n8. Poison\n9. Time\n","color":"gold"}

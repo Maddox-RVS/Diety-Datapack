@@ -1,5 +1,6 @@
 {
 	"values": [
-		"gods:load"
+		"gods:load",
+		"sculk_dimension:load"
 	]
 }

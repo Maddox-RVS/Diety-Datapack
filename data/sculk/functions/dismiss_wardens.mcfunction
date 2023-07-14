@@ -1,0 +1,2 @@
+execute as @e[type=warden, distance=..30] run data merge entity @s {Brain:{memories:{"minecraft:is_digging":{value:1b, ttl:1200}}}}
+execute at @s run playsound minecraft:entity.warden.roar master @a[distance=..30]
