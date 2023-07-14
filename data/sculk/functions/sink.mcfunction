@@ -3,4 +3,4 @@ tp @e[type=warden, distance=..6, limit=1, tag=digVisuals] ~ ~ ~
 team join wardenVisuals @e[type=warden, distance=..3, limit=1, tag=digVisuals]
 effect give @s slow_falling 3 200 true
 effect give @s resistance 7 200 true
-scoreboard players set @s sink 60
+scoreboard players set @s sink 80

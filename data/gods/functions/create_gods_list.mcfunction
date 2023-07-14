@@ -42,11 +42,11 @@ team modify Gravity seeFriendlyInvisibles false
 team add Sculk
 team modify Sculk prefix ["","[",{"text":"Sculk","color":"dark_gray"},"] "]
 scoreboard objectives add sink dummy
-scoreboard players set @a sink -21
-scoreboard players set sinkTimeThreshHold sink 0
+# scoreboard players set @a sink -21
+scoreboard players set sinkTimeThreshHold sink 20
 scoreboard objectives add rise dummy
-scoreboard players set riseTimeThreshHold rise 0
-scoreboard players set riseWaitTime rise 19
+scoreboard players set riseTimeThreshHold rise 20
+scoreboard players set riseWaitTime rise 39
 team modify Sculk seeFriendlyInvisibles false
 scoreboard objectives add sculk_dim dummy
 team add wardenVisuals
