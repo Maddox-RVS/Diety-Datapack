@@ -16,5 +16,6 @@ scoreboard objectives remove rise
 team remove Sculk
 team remove wardenVisuals
 team remove Time
+team remove Sea
 
 tellraw @a {"text":"\nRemoved gods:\n------------\n1. Weather\n2. Famine\n3. Animals\n4. Fire\n5. Motion\n6. Gravity\n7. Sculk\n8. Poison\n9. Time","color":"gold"}

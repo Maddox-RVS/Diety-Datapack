@@ -36,7 +36,7 @@ team modify Gravity prefix ["","[",{"text":"Gravity","color":"gray"},"] "]
 team modify Gravity seeFriendlyInvisibles false
 
 team add Time
-team modify Time prefix ["","[",{"text":"Time","color":"cyan"},"] "]
+team modify Time prefix ["","[",{"text":"Time","color":"dark_aqua"},"] "]
 team modify Gravity seeFriendlyInvisibles false
 
 team add Sculk
@@ -52,4 +52,8 @@ scoreboard objectives add sculk_dim dummy
 team add wardenVisuals
 team modify wardenVisuals collisionRule never
 
-tellraw @a {"text":"\nCreated gods:\n------------\n1. Weather\n2. Famine\n3. Animals\n4. Fire\n5. Motion\n6. Gravity\n7. Sculk\n8. Poison\n9. Time\n","color":"gold"}
+team add Sea
+team modify Sea prefix ["","[",{"text":"Sea","color":"dark_blue"},"] "]
+team modify Gravity seeFriendlyInvisibles false
+
+tellraw @a {"text":"\nCreated gods:\n------------\n1. Weather\n2. Famine\n3. Animals\n4. Fire\n5. Motion\n6. Gravity\n7. Sculk\n8. Poison\n9. Time\n10. Sea\n","color":"gold"}

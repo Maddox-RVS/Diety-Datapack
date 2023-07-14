@@ -8,6 +8,8 @@
 		"poison:tick",
 		"gravity:tick",
 		"sculk:tick",
-		"sculk_dimension:tick"
+		"sculk_dimension:tick",
+		"weather:tick",
+		"sea:tick"
 	]
 }
