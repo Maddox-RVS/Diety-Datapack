@@ -51,3 +51,5 @@ team join morphs @e[tag=morphable]
 team modify morphs collisionRule pushOtherTeams
 team modify morphs nametagVisibility never
 tag @s add morpher
+
+execute at @s run playsound minecraft:entity.evoker.cast_spell master @a[distance=..30]

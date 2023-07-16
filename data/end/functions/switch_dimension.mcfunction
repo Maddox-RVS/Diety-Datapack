@@ -1,0 +1,4 @@
+execute if score @s has_been_in_the_end matches 1 run execute at @s run playsound minecraft:entity.illusioner.mirror_move master @a[distance=..30]
+execute if dimension overworld run execute if score @s has_been_in_the_end matches 1 run execute in the_end run tp @s ~ 64 ~
+execute if dimension the_end run execute if score @s has_been_in_the_end matches 1 run execute in overworld run tp @s ~ -62 ~
+execute if score @s has_been_in_the_end <= not_entered_end has_been_in_the_end run tellraw @s {"text":"You cannot use this power until you have entered the end through normal means first!","color":"red"}

@@ -10,6 +10,7 @@
 		"sculk:tick",
 		"sculk_dimension:tick",
 		"weather:tick",
-		"sea:tick"
+		"sea:tick",
+		"end:tick"
 	]
 }

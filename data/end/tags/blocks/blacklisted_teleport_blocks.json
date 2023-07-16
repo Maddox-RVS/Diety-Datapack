@@ -1,0 +1,111 @@
+{
+    "replace": false,
+    "values": [
+        "minecraft:air",
+        "minecraft:cave_air",
+        "minecraft:void_air",
+
+        "minecraft:cave_vines",
+        "minecraft:cave_vines_plant",
+
+        "minecraft:sugar_cane",
+        "minecraft:tall_grass",
+        "minecraft:large_fern",
+        "minecraft:lilac",
+        "minecraft:rose_bush",
+
+        "minecraft:pitcher_crop",
+        "minecraft:pitcher_plant",
+
+        "minecraft:peony",
+        "minecraft:vine",
+
+        "minecraft:weeping_vines",
+        "minecraft:weeping_vines_plant",
+
+        "minecraft:twisting_vines",
+        "twisting_vines_plant",
+
+        "minecraft:torch",
+        "minecraft:soul_torch",
+        "minecraft:redstone_torch",
+        "minecraft:wall_torch",
+        "minecraft:soul_wall_torch",
+        "minecraft:redstone_wall_torch",
+
+        "minecraft:glow_lichen",
+        "minecraft:scaffolding",
+        "minecraft:ladder",
+        "minecraft:chain",
+        "minecraft:end_rod",
+
+        "minecraft:tripwire",
+        "minecraft:tripwire_hook",
+
+        "#minecraft:stone_buttons",
+        "#minecraft:wooden_buttons",
+
+        "#minecraft:flower_pots",
+        "#minecraft:wooden_fences",
+        "minecraft:nether_brick_fence",
+        "minecraft:iron_bars",
+        "minecraft:lever",
+
+        "#minecraft:glass_panes",
+        "#minecraft:doors",
+        "#minecraft:trapdoors",
+        "minecraft:conduit",
+        "#minecraft:slabs",
+        "#minecraft:fence_gates",
+        "#minecraft:walls",
+        "minecraft:pointed_dripstone",
+        
+        "minecraft:oak_sign",
+        "minecraft:birch_sign",
+        "minecraft:acacia_sign",
+        "minecraft:bamboo_sign",
+        "minecraft:cherry_sign",
+        "minecraft:jungle_sign",
+        "minecraft:warped_sign",
+        "minecraft:spruce_sign",
+        "minecraft:crimson_sign",
+        "minecraft:dark_oak_sign",
+        "minecraft:mangrove_sign",
+
+        "minecraft:oak_hanging_sign",
+        "minecraft:birch_hanging_sign",
+        "minecraft:acacia_hanging_sign",
+        "minecraft:bamboo_hanging_sign",
+        "minecraft:cherry_hanging_sign",
+        "minecraft:jungle_hanging_sign",
+        "minecraft:warped_hanging_sign",
+        "minecraft:spruce_hanging_sign",
+        "minecraft:crimson_hanging_sign",
+        "minecraft:dark_oak_hanging_sign",
+        "minecraft:mangrove_hanging_sign",
+
+        "minecraft:oak_wall_sign",
+        "minecraft:birch_wall_sign",
+        "minecraft:acacia_wall_sign",
+        "minecraft:bamboo_wall_sign",
+        "minecraft:cherry_wall_sign",
+        "minecraft:jungle_wall_sign",
+        "minecraft:warped_wall_sign",
+        "minecraft:spruce_wall_sign",
+        "minecraft:crimson_wall_sign",
+        "minecraft:dark_oak_wall_sign",
+        "minecraft:mangrove_wall_sign",
+
+        "minecraft:oak_wall_hanging_sign",
+        "minecraft:birch_wall_hanging_sign",
+        "minecraft:acacia_wall_hanging_sign",
+        "minecraft:bamboo_wall_hanging_sign",
+        "minecraft:cherry_wall_hanging_sign",
+        "minecraft:jungle_wall_hanging_sign",
+        "minecraft:warped_wall_hanging_sign",
+        "minecraft:spruce_wall_hanging_sign",
+        "minecraft:crimson_wall_hanging_sign",
+        "minecraft:dark_oak_wall_hanging_sign",
+        "minecraft:mangrove_wall_hanging_sign"
+    ]
+}

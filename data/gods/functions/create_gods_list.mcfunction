@@ -54,6 +54,12 @@ team modify wardenVisuals collisionRule never
 
 team add Sea
 team modify Sea prefix ["","[",{"text":"Sea","color":"dark_blue"},"] "]
-team modify Gravity seeFriendlyInvisibles false
+team modify Sea seeFriendlyInvisibles false
 
-tellraw @a {"text":"\nCreated gods:\n------------\n1. Weather\n2. Famine\n3. Animals\n4. Fire\n5. Motion\n6. Gravity\n7. Sculk\n8. Poison\n9. Time\n10. Sea\n","color":"gold"}
+team add End
+team modify End prefix ["","[",{"text":"End","color":"light_purple"},"] "]
+team modify End seeFriendlyInvisibles false
+scoreboard objectives add has_been_in_the_end dummy
+scoreboard players set not_entered_end has_been_in_the_end 0
+
+tellraw @a {"text":"\nCreated gods:\n------------\n1. Weather\n2. Famine\n3. Animals\n4. Fire\n5. Motion\n6. Gravity\n7. Sculk\n8. Poison\n9. Time\n10. Sea\n11. End\n","color":"gold"}
