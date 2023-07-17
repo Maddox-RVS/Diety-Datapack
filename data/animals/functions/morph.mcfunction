@@ -53,3 +53,5 @@ team modify morphs nametagVisibility never
 tag @s add morpher
 
 execute at @s run playsound minecraft:entity.evoker.cast_spell master @a[distance=..30]
+
+execute at @s run particle minecraft:cloud ~ ~1 ~ 0 0 0 0.1 600 force @a

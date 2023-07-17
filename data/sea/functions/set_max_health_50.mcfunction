@@ -1,0 +1,2 @@
+execute as @a[team=Sea] run execute if entity @e[distance=..1, tag=morphable_sea] run execute if score @s Health matches 52 run damage @s 2
+execute as @a[team=Sea] run execute if entity @e[distance=..1, tag=morphable_sea] run execute if score @s Health matches 51 run damage @s 1

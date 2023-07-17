@@ -55,7 +55,7 @@ execute at @a[team=Animals] run execute if entity @e[distance=..1, type=cat, tag
 execute at @a[team=Animals] run execute if entity @e[distance=..1, type=cat, tag=morphable] run function animals:set_max_health_30
 
 execute at @a[team=Animals] run execute if entity @e[distance=..1, type=horse, tag=morphable] run attribute @p generic.max_health base set 36
-execute at @a[team=Animals] run execute if entity @e[distance=..1, type=horse, tag=morphable] run function animals:set_max_health_26
+execute at @a[team=Animals] run execute if entity @e[distance=..1, type=horse, tag=morphable] run function animals:set_max_health_36
 execute at @a[team=Animals] run execute if entity @e[distance=..1, type=horse, tag=morphable] run ride @p dismount 
 
 execute at @a[team=Animals] run execute if entity @e[distance=..1, type=mule, tag=morphable] run attribute @p generic.max_health base set 42

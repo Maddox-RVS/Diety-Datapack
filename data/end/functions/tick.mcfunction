@@ -7,7 +7,9 @@ execute at @a[team=End] run execute as @p run execute if block ~ ~-1 ~ air run e
 
 execute at @a[team=End] run execute as @p run execute if block ~ ~-1 ~ void_air run execute if block ~ ~-2 ~ void_air run execute if block ~ ~-3 ~ void_air run execute if block ~ ~-4 ~ void_air run execute if block ~ ~-5 ~ void_air run execute if block ~ ~-6 ~ void_air run execute if block ~ ~-7 ~ void_air run execute if block ~ ~-8 ~ void_air run execute if block ~ ~-9 ~ void_air run execute if block ~ ~-10 ~ void_air run function end:teleport
 
-execute at @a[team=End] run execute as @p run execute unless block ~ ~1 ~ #end:blocklists run say hi
+execute at @a[team=End] run execute as @p run scoreboard players remove @s blacklisted_teleport_blocks 1
+function end:check_blacklist
+execute at @a[team=End] run execute as @p run execute unless score @s blacklisted_teleport_blocks matches 1 run function end:find_surface
 
 execute at @a[team=End] run team join End @e[type=enderman, distance=..100]
 execute at @e[type=enderman] run execute unless entity @a[distance=..100] run team leave @e[distance=..1, type=enderman]
