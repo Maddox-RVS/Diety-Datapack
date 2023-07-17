@@ -6,6 +6,7 @@ execute at @a[team=End] run execute as @p run execute if block ~ ~1 ~ minecraft:
 execute at @a[team=End] run execute as @p run execute if block ~ ~1 ~ minecraft:cave_vines_plant run scoreboard players set @s blacklisted_teleport_blocks 1
 
 execute at @a[team=End] run execute as @p run execute if block ~ ~1 ~ minecraft:sugar_cane run scoreboard players set @s blacklisted_teleport_blocks 1
+execute at @a[team=End] run execute as @p run execute if block ~ ~1 ~ minecraft:bamboo run scoreboard players set @s blacklisted_teleport_blocks 1
 execute at @a[team=End] run execute as @p run execute if block ~ ~1 ~ minecraft:tall_grass run scoreboard players set @s blacklisted_teleport_blocks 1
 execute at @a[team=End] run execute as @p run execute if block ~ ~1 ~ minecraft:large_fern run scoreboard players set @s blacklisted_teleport_blocks 1
 execute at @a[team=End] run execute as @p run execute if block ~ ~1 ~ minecraft:lilac run scoreboard players set @s blacklisted_teleport_blocks 1
