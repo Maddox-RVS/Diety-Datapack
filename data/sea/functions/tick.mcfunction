@@ -13,6 +13,7 @@ execute unless entity @e[tag=morphable_sea] run execute as @a[tag=morpher_sea] r
 #Salmon
 #Squid
 #Axolotl
+#Pufferfish
 
 execute unless entity @a[team=Sea] run execute as @p run function sea:unmorph
 execute at @a[team=Sea] run execute as @p[team=Sea] run scoreboard players set @s isOnSeaTeam 1

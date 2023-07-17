@@ -64,5 +64,4 @@ scoreboard objectives add blacklisted_teleport_blocks dummy
 
 tellraw @a {"text":"\nCreated gods:\n------------\n1. Weather\n2. Famine\n3. Animals\n4. Fire\n5. Motion\n6. Gravity\n7. Sculk\n8. Poison\n9. Time\n10. Sea\n11. End\n","color":"gold"}
 
-#A team that signifies that the player is changing teams
-team add Changing
+scoreboard objectives add team_member_numbers_list dummy
