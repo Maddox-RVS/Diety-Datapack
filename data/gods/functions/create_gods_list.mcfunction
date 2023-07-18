@@ -37,6 +37,8 @@ team modify Gravity seeFriendlyInvisibles false
 team add Time
 team modify Time prefix ["","[",{"text":"Time","color":"dark_aqua"},"] "]
 team modify Gravity seeFriendlyInvisibles false
+scoreboard objectives add frozenTime dummy
+scoreboard players set timeMax frozenTime 200
 
 team add Sculk
 team modify Sculk prefix ["","[",{"text":"Sculk","color":"dark_gray"},"] "]

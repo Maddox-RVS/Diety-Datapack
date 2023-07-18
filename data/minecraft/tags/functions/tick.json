@@ -11,6 +11,7 @@
 		"sculk_dimension:tick",
 		"weather:tick",
 		"sea:tick",
-		"end:tick"
+		"end:tick",
+		"time:tick"
 	]
 }
