@@ -1,6 +1,6 @@
 execute positioned 0.0 0 0.0 run summon marker ^ ^ ^1 {Tags:["direction"]}
 
-execute as @s[team = Fire] run summon fireball ~ ~1.5 ~ {Tags: ["projectile", "customFireBall"]} 
+execute as @s[team = Fire] run summon fireball ~ ~1.5 ~ {Tags: ["projectile", "customFireBall"],ExplosionPower:4} 
 data modify entity @e[type=fireball,tag=projectile,limit=1] Motion set from entity @e[type=marker, tag = direction, limit = 1] Pos
 
 execute as @e[type=minecraft:fireball] store result entity @s power[0] double 0.00001 run data get entity @s Motion[0] 5264
