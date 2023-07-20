@@ -25,6 +25,8 @@ execute at @a[team=End] run execute as @p run execute if block ~ ~1 ~ minecraft:
 execute at @a[team=End] run execute as @p run execute if block ~ ~1 ~ minecraft:twisting_vines run scoreboard players set @s blacklisted_teleport_blocks 1
 execute at @a[team=End] run execute as @p run execute if block ~ ~1 ~ minecraft:twisting_vines_plant run scoreboard players set @s blacklisted_teleport_blocks 1
 
+execute at @a[team=End] run execute as @p run execute if block ~ ~1 ~ minecraft:cocoa run scoreboard players set @s blacklisted_teleport_blocks 1
+
 execute at @a[team=End] run execute as @p run execute if block ~ ~1 ~ minecraft:torch run scoreboard players set @s blacklisted_teleport_blocks 1
 execute at @a[team=End] run execute as @p run execute if block ~ ~1 ~ minecraft:soul_torch run scoreboard players set @s blacklisted_teleport_blocks 1
 execute at @a[team=End] run execute as @p run execute if block ~ ~1 ~ minecraft:redstone_torch run scoreboard players set @s blacklisted_teleport_blocks 1
