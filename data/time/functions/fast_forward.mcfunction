@@ -1,4 +1,5 @@
 gamerule randomTickSpeed 1000
+execute at @s run playsound minecraft:entity.panda.sneeze master @a[distance=..30]
 function time:time_set_1000
 schedule function time:time_set_2000 1s
 schedule function time:time_set_3000 2s
