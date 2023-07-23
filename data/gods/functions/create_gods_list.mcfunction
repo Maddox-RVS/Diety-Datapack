@@ -29,6 +29,16 @@ team modify Motion prefix ["","[",{"text":"Motion","color":"aqua"},"] "]
 scoreboard objectives add motionSwitcherClickStatus minecraft.used:minecraft.warped_fungus_on_a_stick
 scoreboard players set max motionSwitcherClickStatus 1
 team modify Motion seeFriendlyInvisibles false
+scoreboard objectives add chargeTime dummy
+scoreboard players set full chargeTime 15
+scoreboard players set empty chargeTime 0
+scoreboard objectives add charge dummy
+scoreboard players set empty charge 0
+scoreboard players set full charge 10
+scoreboard objectives add sneakTimeMotion minecraft.custom:minecraft.sneak_time
+scoreboard players set chargeTick sneakTimeMotion 50
+scoreboard objectives add isSneaking minecraft.custom:minecraft.sneak_time
+scoreboard players set max isSneaking 1
 
 team add Gravity
 team modify Gravity prefix ["","[",{"text":"Gravity","color":"gray"},"] "]
