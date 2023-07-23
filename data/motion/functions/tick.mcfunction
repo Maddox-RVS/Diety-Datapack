@@ -17,4 +17,6 @@ execute at @a[team=Motion] run execute as @p run execute if score @s charge >= f
 execute at @a[team=Motion] run execute as @p run function motion:show_charging_bar
 
 execute at @a run execute as @p run execute if score @s isSneaking matches 0 run scoreboard players set @s chargeTime 0
+execute at @a run execute as @p run execute if score @s isSneaking matches 1 run execute if score @s charge < full charge run particle minecraft:electric_spark ~ ~1 ~ 0 0 0 2 5 normal
+execute at @a run execute as @p run execute if score @s isSneaking matches 1 run execute if score @s charge < full charge run function motion:play_charge_sound
 execute at @a run execute as @p run execute if score @s isSneaking >= max isSneaking run scoreboard players set @s isSneaking 0
