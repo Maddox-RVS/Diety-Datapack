@@ -36,7 +36,7 @@ scoreboard objectives add charge dummy
 scoreboard players set empty charge 0
 scoreboard players set full charge 10
 scoreboard objectives add sneakTimeMotion minecraft.custom:minecraft.sneak_time
-scoreboard players set chargeTick sneakTimeMotion 50
+scoreboard players set chargeTick sneakTimeMotion 20
 scoreboard objectives add isSneaking minecraft.custom:minecraft.sneak_time
 scoreboard players set max isSneaking 1
 

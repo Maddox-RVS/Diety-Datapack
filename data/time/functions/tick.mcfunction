@@ -7,3 +7,4 @@ execute at @e[tag=time] as @e[tag=frozen,distance=..1] run teleport @s ~ ~ ~
 execute as @e[tag=frozen] run scoreboard players add @s frozenTime 1
 execute at @e[tag=frozen] run particle electric_spark ~ ~1 ~ 0 0 0 1 10 normal
 
+effect give @e[team=Time] haste 1 2 true
