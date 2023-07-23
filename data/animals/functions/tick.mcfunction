@@ -1,5 +1,6 @@
 execute as @a[tag=morpher, team=Animals] run tp @e[tag=morphable, limit=1] @s
 execute as @a[tag=morpher, team=Animals] run effect give @s invisibility 1 1 true
+effect give @e[tag=morphable] resistance 1 200 true
 execute unless entity @e[tag=morphable] run execute as @a[tag=morpher] run function animals:unmorph
 
 # type=sheep
