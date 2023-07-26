@@ -1,5 +1,5 @@
-execute unless entity @s[nbt={Inventory:[{id:"minecraft:netherite_ingot"},{id:"minecraft:flint_and_steel"}]}] run tellraw @s {"text":"YOU DO NOT HAVE THE CORRECT MATERIALS","color":"red"}
-execute if entity @s[nbt={Inventory:[{id:"minecraft:netherite_ingot"},{id:"minecraft:flint_and_steel"}]}] run tellraw @s[team=Fire] {"text":"YOU ARE ALREADY FIRE DEITY","color":"red"}
+execute unless entity @s[nbt={Inventory:[{id:"minecraft:netherite_ingot"},{id:"minecraft:flint_and_steel"}]}] run tellraw @s[team=!Fire] {"text":"YOU DO NOT HAVE THE CORRECT MATERIALS","color":"red"}
+tellraw @s[team=Fire] {"text":"YOU ARE ALREADY THE FIRE DEITY","color":"red"}
 execute if entity @s[nbt={Inventory:[{id:"minecraft:netherite_ingot"},{id:"minecraft:flint_and_steel"}]}] run tellraw @s[team=!Fire] {"text":"YOU ARE NOW A DEITY OF FIRE","color":"gold"}
 execute if entity @s[nbt={Inventory:[{id:"minecraft:netherite_ingot"},{id:"minecraft:flint_and_steel"}]}] run execute as @s[team=!Fire] run tag @s add changing
 execute if entity @s[nbt={Inventory:[{id:"minecraft:netherite_ingot"},{id:"minecraft:flint_and_steel"}]}] run clear @s[tag=changing] minecraft:netherite_ingot 1

@@ -11,5 +11,6 @@ team empty Sculk
 team empty Time
 team empty Sea
 team empty End
+team empty Ice
 
 tellraw @a {"text":"\nCleared all god status'\n","color":"gold"}

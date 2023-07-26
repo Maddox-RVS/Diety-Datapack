@@ -1,5 +1,5 @@
-execute unless entity @s[nbt={Inventory:[{id:"minecraft:netherite_ingot"},{id:"minecraft:cobweb"}]}] run tellraw @s {"text":"YOU DO NOT HAVE THE CORRECT MATERIALS","color":"red"}
-execute if entity @s[nbt={Inventory:[{id:"minecraft:netherite_ingot"},{id:"minecraft:cobweb"}]}] run tellraw @s[team=Gravity] {"text":"YOU ARE ALREADY GRAVITY DEITY","color":"red"}
+execute unless entity @s[nbt={Inventory:[{id:"minecraft:netherite_ingot"},{id:"minecraft:cobweb"}]}] run tellraw @s[team=!Gravity] {"text":"YOU DO NOT HAVE THE CORRECT MATERIALS","color":"red"}
+tellraw @s[team=Gravity] {"text":"YOU ARE ALREADY THE GRAVITY DEITY","color":"red"}
 execute if entity @s[nbt={Inventory:[{id:"minecraft:netherite_ingot"},{id:"minecraft:cobweb"}]}] run tellraw @s[team=!Gravity] {"text":"YOU ARE NOW A DEITY OF GRAVITY","color":"gray"}
 execute if entity @s[nbt={Inventory:[{id:"minecraft:netherite_ingot"},{id:"minecraft:cobweb"}]}] run execute as @s[team=!Gravity] run tag @s add changing
 execute if entity @s[nbt={Inventory:[{id:"minecraft:netherite_ingot"},{id:"minecraft:cobweb"}]}] run clear @s[tag=changing] minecraft:netherite_ingot 1

@@ -18,5 +18,9 @@ team remove wardenVisuals
 team remove Time
 team remove Sea
 team remove End
+team remove Ice
+scoreboard objectives remove ice_spike_trap_lifetime
+scoreboard objectives remove damaged_entity
+scoreboard objectives remove damage_taken
 
-tellraw @a {"text":"\nRemoved gods:\n------------\n1. Weather\n2. Famine\n3. Animals\n4. Fire\n5. Motion\n6. Gravity\n7. Sculk\n8. Poison\n9. Time\n10. Sea\n11. End\n","color":"gold"}
+tellraw @a {"text":"\nRemoved gods:\n------------\n1. Weather\n2. Famine\n3. Animals\n4. Fire\n5. Motion\n6. Gravity\n7. Sculk\n8. Poison\n9. Time\n10. Sea\n11. End\n12. Ice\n","color":"gold"}

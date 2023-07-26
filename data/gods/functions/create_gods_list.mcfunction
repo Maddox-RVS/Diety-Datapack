@@ -94,6 +94,16 @@ scoreboard objectives add has_been_in_the_end dummy
 scoreboard players set not_entered_end has_been_in_the_end 0
 scoreboard objectives add blacklisted_teleport_blocks dummy
 
-tellraw @a {"text":"\nCreated gods:\n------------\n1. Weather\n2. Famine\n3. Animals\n4. Fire\n5. Motion\n6. Gravity\n7. Sculk\n8. Poison\n9. Time\n10. Sea\n11. End\n","color":"gold"}
+team add Ice
+team modify Ice prefix ["","[",{"text":"Ice","color":"#00B3FF"},"] "]
+team modify Ice seeFriendlyInvisibles false
+scoreboard objectives add ice_spike_trap_lifetime dummy
+scoreboard players set limit ice_spike_trap_lifetime 700
+scoreboard objectives add damaged_entity minecraft.custom:minecraft.damage_dealt
+scoreboard players set max damaged_entity 1
+scoreboard objectives add damage_taken minecraft.custom:minecraft.damage_taken
+scoreboard players set max damage_taken 100
+
+tellraw @a {"text":"\nCreated gods:\n------------\n1. Weather\n2. Famine\n3. Animals\n4. Fire\n5. Motion\n6. Gravity\n7. Sculk\n8. Poison\n9. Time\n10. Sea\n11. End\n12. Ice\n","color":"gold"}
 
 scoreboard objectives add team_member_numbers_list dummy

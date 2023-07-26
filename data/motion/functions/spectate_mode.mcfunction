@@ -1,4 +1,4 @@
-execute if score @s charge <= empty charge run execute at @s run playsound minecraft:block.note_block.didgeridoo master @a[distance=..30]
+execute if score @s charge <= empty charge run execute at @s run playsound minecraft:block.note_block.didgeridoo master @s
 execute if score @s charge <= empty charge run title @s actionbar {"text":"Not Enough Charge","color":"red"}
 execute if score @s charge > empty charge run tag @s add motionMode
 execute if score @s charge > empty charge run gamemode spectator @s

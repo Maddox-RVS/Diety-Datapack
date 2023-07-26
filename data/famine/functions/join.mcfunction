@@ -1,5 +1,5 @@
-execute unless entity @s[nbt={Inventory:[{id:"minecraft:netherite_ingot"},{id:"minecraft:diamond_hoe"}]}] run tellraw @s {"text":"YOU DO NOT HAVE THE CORRECT MATERIALS","color":"red"}
-execute if entity @s[nbt={Inventory:[{id:"minecraft:netherite_ingot"},{id:"minecraft:diamond_hoe"}]}] run tellraw @s[team=Famine] {"text":"YOU ARE ALREADY FAMINE DEITY","color":"red"}
+execute unless entity @s[nbt={Inventory:[{id:"minecraft:netherite_ingot"},{id:"minecraft:diamond_hoe"}]}] run tellraw @s[team=!Famine] {"text":"YOU DO NOT HAVE THE CORRECT MATERIALS","color":"red"}
+tellraw @s[team=Famine] {"text":"YOU ARE ALREADY FAMINE DEITY","color":"red"}
 execute if entity @s[nbt={Inventory:[{id:"minecraft:netherite_ingot"},{id:"minecraft:diamond_hoe"}]}] run tellraw @s[team=!Famine] {"text":"YOU ARE NOW A DEITY OF FAMINE","color":"red"}
 execute if entity @s[nbt={Inventory:[{id:"minecraft:netherite_ingot"},{id:"minecraft:diamond_hoe"}]}] run execute as @s[team=!Famine] run tag @s add changing
 execute if entity @s[nbt={Inventory:[{id:"minecraft:netherite_ingot"},{id:"minecraft:diamond_hoe"}]}] run clear @s[tag=changing] minecraft:netherite_ingot 1

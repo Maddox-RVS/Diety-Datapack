@@ -12,6 +12,7 @@
 		"weather:tick",
 		"sea:tick",
 		"end:tick",
-		"time:tick"
+		"time:tick",
+		"ice:tick"
 	]
 }

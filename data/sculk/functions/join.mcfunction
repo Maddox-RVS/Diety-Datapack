@@ -1,5 +1,5 @@
-execute unless entity @s[nbt={Inventory:[{id:"minecraft:netherite_ingot"},{id:"minecraft:sculk_catalyst"}]}] run tellraw @s {"text":"YOU DO NOT HAVE THE CORRECT MATERIALS","color":"red"}
-execute if entity @s[nbt={Inventory:[{id:"minecraft:netherite_ingot"},{id:"minecraft:sculk_catalyst"}]}] run tellraw @s[team=Sculk] {"text":"YOU ARE ALREADY SCULK DEITY","color":"red"}
+execute unless entity @s[nbt={Inventory:[{id:"minecraft:netherite_ingot"},{id:"minecraft:sculk_catalyst"}]}] run tellraw @s[team=!Sculk] {"text":"YOU DO NOT HAVE THE CORRECT MATERIALS","color":"red"}
+tellraw @s[team=Sculk] {"text":"YOU ARE ALREADY A SCULK DEITY","color":"red"}
 execute if entity @s[nbt={Inventory:[{id:"minecraft:netherite_ingot"},{id:"minecraft:sculk_catalyst"}]}] run tellraw @s[team=!Sculk] {"text":"YOU ARE NOW A DEITY OF SCULK","color":"dark_gray"}
 execute if entity @s[nbt={Inventory:[{id:"minecraft:netherite_ingot"},{id:"minecraft:sculk_catalyst"}]}] run execute as @s[team=!Sculk] run tag @s add changing
 execute if entity @s[nbt={Inventory:[{id:"minecraft:netherite_ingot"},{id:"minecraft:sculk_catalyst"}]}] run clear @s[tag=changing] minecraft:netherite_ingot 1

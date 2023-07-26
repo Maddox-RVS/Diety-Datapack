@@ -1,5 +1,5 @@
-execute unless entity @s[nbt={Inventory:[{id:"minecraft:netherite_ingot"},{id:"minecraft:water_bucket"}]}] run tellraw @s {"text":"YOU DO NOT HAVE THE CORRECT MATERIALS","color":"red"}
-execute if entity @s[nbt={Inventory:[{id:"minecraft:netherite_ingot"},{id:"minecraft:water_bucket"}]}] run tellraw @s[team=Weather] {"text":"YOU ARE ALREADY A WEATHER DEITY","color":"red"}
+execute unless entity @s[nbt={Inventory:[{id:"minecraft:netherite_ingot"},{id:"minecraft:water_bucket"}]}] run tellraw @s[team=!Weather] {"text":"YOU DO NOT HAVE THE CORRECT MATERIALS","color":"red"}
+tellraw @s[team=Weather] {"text":"YOU ARE ALREADY A WEATHER DEITY","color":"red"}
 execute if entity @s[nbt={Inventory:[{id:"minecraft:netherite_ingot"},{id:"minecraft:water_bucket"}]}] run tellraw @s[team=!Weather] {"text":"YOU ARE NOW A DEITY OF WEATHER","color":"blue"}
 execute if entity @s[nbt={Inventory:[{id:"minecraft:netherite_ingot"},{id:"minecraft:water_bucket"}]}] run execute as @s[team=!Weather] run tag @s add changing
 execute if entity @s[nbt={Inventory:[{id:"minecraft:netherite_ingot"},{id:"minecraft:water_bucket"}]}] run clear @s[tag=changing] minecraft:netherite_ingot 1
